@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+#menu{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.img_porta{
+    width: 525px;
+}
+
+.titulo{
+    font-family: 'Style Script', cursive;
+    font-size: 26px;
+    width: 148px;
+    text-align: center;
+}
+
+
+
+/* PORTA ESQUERDA */
+
+#esquerda{
+    display: none;
+    
+    position: relative;
+    bottom: 26em;
+    margin: 0 auto;
+    width: 600px;
+    height: 350px;
+    padding: 1em;
+}
+
+
+
+/* PORTA DIREITA */
+
+
+#direita{
+    display: none;
+    
+    position: relative;
+    bottom: 26em;
+    margin: 0 auto;
+    width: 600px;
+    height: 350px;
+    padding: 1em;
+}
+
+
+.texto{
+    font-family: 'Lobster', cursive;
+    width: 500px;
+    margin: 0 auto;
+    background-color: #d8c6d7;
+    padding: 1.5em;
+    border-radius: 10.2px;
+    font-size: 21px;
+    border: solid #000;
+}
