@@ -1,42 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" style="height: 100%;display: flex;justify-content: center;align-items: center;" >
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forbia</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body class="Principal_Fundo">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pra vc amor</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-</head>
-
-<body>
-    <main>
-        <div id="menu">
-            <div>
-                <img id="porta_esquerda" onclick="MostrarEsquerda(); EsconderDireita()" class="img_porta" src="assets/porta.png" alt="porta">
-            </div>
-
-            <p class="titulo">Escolhe uma porta meu amor</p>
-
-            <div>
-                <img id="porta_direita" onclick="MostrarDireita(); EsconderEsquerda()" class="img_porta" src="assets/porta.png" alt="porta">
-            </div>
-        </div>
-
-        <div  id="esquerda" onclick="EsconderEsquerda()" >
-            <div class="container_esquerda">
-                <p class="texto">Oiee, meu amor!!! queria dizer que você é incrivel, penso em ti 24 horas por dia, e agradeço a Isma e o Odirlei todos os dias por terem feito eu conhecer aquela mina com um sorrisinho timido que hoje é mto especial pra mim. Você ilumina meus dias escuros, colore meus dias cinzas, e tranforma meus dias com seu jeito de falar e agir, enfim amo vc S2  </p>
-            </div>
-        </div>
-
-        <div  id="direita" onclick="EsconderDireita()" >
-            <div class="container_esquerda">
-                <p class="texto">Amor vc Sabia né?... que vc eh linda, tu eh muito gata mesmoo porem tem muitas outras coisas que gosto em você, amo seu jeito fofo e desastrado kkkk, amo seu jeito alegre e divertida, amo conversar com você, amo a vibe de estar com você e eu amo estar apaixado por alguem tão incrivel, te amo meu amor S2    </p>
-            </div>
-        </div>
-
-    </main>
-</body>
-
+        <form>
+            <input name="senha" type="password">
+            <button type="submit" onclick="Login(); return false;"></button>
+        </form>
+        <main class="Principal_main">
+            <a id="verde" href=""> <img id="img_verde" src="assets/verde_fechado.png" alt="cadeado_verde"> </a>
+            <a id="vermelho" href=""> <img id="img_vermelho" src="assets/cadeado_vermelho.png" alt="cadeado_vermelho"> </a>
+            <a id="roxo" href=""> <img id="img_roxo" src="assets/cadeado_roxo.png" alt="cadeado_roxo"> </a>
+            <a id="preto" href=""> <img id="img_preto" src="assets/cadeado_preto.png" alt="cadeado_preto"> </a>
+            <a id="branco" href=""> <img id="img_branco" src="assets/cadeado_branco.png" alt="cadeado_branco"> </a>
+        </main>
+    </body>
 </html>

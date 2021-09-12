@@ -1,64 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 
-#menu{
-    width: 1200px;
+}
+
+form{
+    margin-bottom: 4em;
+    display: flex;
+}
+
+input[type=password]{
+    background-color: #fff;
+    height: 33px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 48em;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px 0 0 15px;
+}
+
+button{
+    background-color: #fff;
+    height: 33px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 3em;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 0 15px 15px 0;
+}
+
+
+/* PRINCIPAL */
+
+.Principal_Fundo{
+    background-image: url(../assets/Fundo_principal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Principal_main{
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+}
+
+/* FIM PRINCIPAL */
+
+.tamanho{
+    width: 190px;
+}
+
+
+/* ENGRAÇADA */
+
+.verde_Fundo{
+    background-image: url(../assets/fundo_verde.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.img_porta{
-    width: 525px;
+.Borda{
+    border: #fff 7px solid;
+    padding: 2em 2em 4em 2em;
+    width: 1193px;
+    display: flex;
+    flex-direction: column;
+    height: 35em;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.titulo{
-    font-family: 'Style Script', cursive;
-    font-size: 26px;
-    width: 148px;
+.Borda h1{
+    font-family: 'Titillium Web', sans-serif;
+    color: #fff;
     text-align: center;
+    font-size: 38px;
+}
+
+.div_texto_engracada{
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 47.272px;
+    padding: 2em;
+    width: 880px;
+    height: 376px;
+}
+
+.texto_engracada{
+    font-family: 'Titillium Web', sans-serif;
+    color: #403f3f;
+    font-weight: 700;
 }
 
 
+.vermelha_Fundo{
+    background-image: url(../assets/fundo_vermelho.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* PORTA ESQUERDA */
+.roxa_Fundo{
+    background-image: url(../assets/fundo_roxo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-#esquerda{
-    display: none;
-    
-    position: relative;
-    bottom: 26em;
-    margin: 0 auto;
-    width: 600px;
-    height: 350px;
-    padding: 1em;
+.preto_Fundo{
+    background-image: url(../assets/fundo_preto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-
-/* PORTA DIREITA */
-
-
-#direita{
-    display: none;
-    
-    position: relative;
-    bottom: 26em;
-    margin: 0 auto;
-    width: 600px;
-    height: 350px;
-    padding: 1em;
+.etc_Fundo{
+    background-image: url(../assets/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.Borda_etc{
+    border: #fff 7px solid;
+    padding: 2em 2em 4em 2em;
+    width: 1193px;
+    display: flex;
+    flex-direction: column;
+    height: 35em;
+    justify-content: space-between;
+}
 
-.texto{
-    font-family: 'Lobster', cursive;
-    width: 500px;
-    margin: 0 auto;
-    background-color: #d8c6d7;
-    padding: 1.5em;
-    border-radius: 10.2px;
-    font-size: 21px;
-    border: solid #000;
+.div_texto_etc{
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 47.272px;
+    padding: 2em;
+    width: 439px;
+    height: 486px;
 }
