@@ -1,3 +1,35 @@
 
+// var cards = document.getElementById('Principal_main');
 
-function _0x4ad2(){var _0x1627d9=['img_verde','senha','src','Engracada.html','2eYCqwC','href','preto','81835rzHNYS','1174916IitRxX','Companheira.html','651184MiJmqF','Senha\x20errada\x20amor\x20♥','assets/cadeado_roxo_aberto.png','assets/cadeado_verde.png','toLowerCase','vocetornameusdiasmaiscoloridos','verde','img_branco','meiga.html','assets/cadeado_vermelho_aberto.png','ehincrivelsaberquepossocontarcntg','assets/cadeado_preto_aberto.png','img_roxo','6xBDDvV','getElementById','1475789HQLxOU','branco','amocomovoceehcarinhosa','Fofa.html','29010610VERBxe','169521xGqucQ','img_vermelho','68139XArTuJ','68bqMWIH','assets/cadeado_branco_aberto.png'];_0x4ad2=function(){return _0x1627d9;};return _0x4ad2();}(function(_0x7a36e7,_0x31b884){var _0x4a5aa7=_0x45a4,_0x786dc0=_0x7a36e7();while(!![]){try{var _0x2b3bec=parseInt(_0x4a5aa7(0x180))/0x1*(-parseInt(_0x4a5aa7(0x184))/0x2)+parseInt(_0x4a5aa7(0x177))/0x3*(-parseInt(_0x4a5aa7(0x17a))/0x4)+parseInt(_0x4a5aa7(0x183))/0x5*(-parseInt(_0x4a5aa7(0x170))/0x6)+parseInt(_0x4a5aa7(0x172))/0x7+-parseInt(_0x4a5aa7(0x186))/0x8+-parseInt(_0x4a5aa7(0x179))/0x9+parseInt(_0x4a5aa7(0x176))/0xa;if(_0x2b3bec===_0x31b884)break;else _0x786dc0['push'](_0x786dc0['shift']());}catch(_0xa0451){_0x786dc0['push'](_0x786dc0['shift']());}}}(_0x4ad2,0xd4a69));function _0x45a4(_0x11bdc8,_0x454a26){var _0x4ad2f1=_0x4ad2();return _0x45a4=function(_0x45a4e9,_0x40a39d){_0x45a4e9=_0x45a4e9-0x16f;var _0x30caf8=_0x4ad2f1[_0x45a4e9];return _0x30caf8;},_0x45a4(_0x11bdc8,_0x454a26);}function Login(){var _0x569231=_0x45a4,_0xd6637d=document[_0x569231(0x171)](_0x569231(0x18c)),_0x210409=document[_0x569231(0x171)](_0x569231(0x17c)),_0x14e830=document[_0x569231(0x171)]('vermelho'),_0x533fe6=document['getElementById'](_0x569231(0x178)),_0x3bdfcf=document[_0x569231(0x171)]('roxo'),_0x556045=document['getElementById'](_0x569231(0x16f)),_0x474e22=document['getElementById'](_0x569231(0x182)),_0x2ad91f=document[_0x569231(0x171)]('img_preto'),_0x540304=document[_0x569231(0x171)](_0x569231(0x173)),_0x35e329=document['getElementById'](_0x569231(0x18d)),_0x26e143=document['getElementsByName'](_0x569231(0x17d))[0x0]['value'];_0x26e143=_0x26e143[_0x569231(0x18a)]();if(_0x26e143==_0x569231(0x18b))_0xd6637d['href']=_0x569231(0x17f),_0x210409[_0x569231(0x17e)]=_0x569231(0x189);else{if(_0x26e143==_0x569231(0x174))_0x14e830[_0x569231(0x181)]=_0x569231(0x18e),_0x533fe6[_0x569231(0x17e)]=_0x569231(0x18f);else{if(_0x26e143=='amoseujeitinho')_0x3bdfcf['href']=_0x569231(0x175),_0x556045['src']=_0x569231(0x188);else{if(_0x26e143==_0x569231(0x190))_0x474e22[_0x569231(0x181)]=_0x569231(0x185),_0x2ad91f[_0x569231(0x17e)]=_0x569231(0x191);else _0x26e143=='_teamobia_'?(_0x540304['href']='etc.html',_0x35e329[_0x569231(0x17e)]=_0x569231(0x17b)):alert(_0x569231(0x187));}}}}
+var verde = document.getElementById('verde'); 
+// var img_verde = document.getElementById('img_verde');
+
+var vermelho = document.getElementById('vermelho');
+// var img_vermelho = document.getElementById('img_vermelho');
+
+var roxo = document.getElementById('roxo');
+// var img_roxo = document.getElementById('img_roxo');
+
+var preto = document.getElementById('preto');
+// var img_preto = document.getElementById('img_preto');
+
+var branco = document.getElementById('branco');
+// var img_branco = document.getElementById('img_branco');
+
+
+const text = document.querySelector('.titulo-principal');
+
+function typeWrite(elemento){
+  const textoArray = elemento.textContent.split('');
+  elemento.textContent = ' ';
+  textoArray.forEach(function(letra, i){   
+    
+  setTimeout(function(){
+      elemento.textContent += letra;
+  }, 75 * i)
+
+});
+}
+const titulo = document.querySelector('.titulo-principal');
+typeWrite(titulo);
+

@@ -45,7 +45,6 @@ button{
     background-image: url(../assets/Fundo_principal.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -53,11 +52,18 @@ button{
     flex-direction: column;
 }
 
-.Principal_main{
+#Principal_main{
     width: 90%;
     display: flex;
     justify-content: space-between;
 }
+
+.Principal_div{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* FIM PRINCIPAL */
 
@@ -103,6 +109,7 @@ button{
     padding: 2em;
     width: 880px;
     height: 376px;
+    margin-top: 1em;
 }
 
 .texto_engracada{
@@ -173,4 +180,51 @@ button{
     padding: 2em;
     width: 439px;
     height: 486px;
+}
+
+
+a img{
+     width: 215px;
+}
+
+.show{
+    transition: 1s;
+    opacity: 1;
+}
+
+.hide{
+    opacity: 0;
+}
+
+/* #typing{
+    display: none;
+} */
+
+.titulo-principal{
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    font-family:'Courier New', Courier, monospace;
+    color: #fff;
+    display: table;
+}
+.titulo-principal:after{
+ content: '|';
+ margin-left: 5px;
+ opacity: 1;
+ animation: pisca .7s infinite;
+}
+/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+.container{
+    margin-top: 3em;
 }

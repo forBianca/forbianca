@@ -6,20 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Forbia</title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/script.js"></script>
+        <!-- <script src="js/script.js"></script> -->
     </head>
     <body class="Principal_Fundo">
 
-        <form>
-            <input name="senha" type="password">
-            <button type="submit" onclick="Login(); return false;"></button>
-        </form>
-        <main class="Principal_main">
-            <a id="verde" href=""> <img id="img_verde" src="assets/verde_fechado.png" alt="cadeado_verde"> </a>
-            <a id="vermelho" href=""> <img id="img_vermelho" src="assets/cadeado_vermelho.png" alt="cadeado_vermelho"> </a>
-            <a id="roxo" href=""> <img id="img_roxo" src="assets/cadeado_roxo.png" alt="cadeado_roxo"> </a>
-            <a id="preto" href=""> <img id="img_preto" src="assets/cadeado_preto.png" alt="cadeado_preto"> </a>
-            <a id="branco" href=""> <img id="img_branco" src="assets/cadeado_branco.png" alt="cadeado_branco"> </a>
+        <div class="container">
+            <h2 class="titulo-principal">Te amo meu amor</h2>
+            <br><br>
+        </div>
+
+        <main id="Principal_main">
+            <a id="verde"  href="card1.html"> <img id="img_verde" src="assets/fto1.png" alt="cadeado_verde"> </a>
+            <a id="vermelho" href="card2.html">> <img id="img_vermelho" src="assets/fto2.png" alt="cadeado_vermelho"> </a>
+            <a id="roxo" href="card3.html"> <img id="img_roxo" src="assets/fto3.png" alt="cadeado_roxo"> </a>
+            <a id="preto" href="card4.html"> <img id="img_preto" src="assets/fto4.png" alt="cadeado_preto"> </a>
+            
         </main>
+       
+        
+
+        <script>
+            const text = document.querySelector('.titulo-principal');
+
+            function typeWrite(elemento){
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = ' ';
+            textoArray.forEach(function(letra, i){   
+                
+            setTimeout(function(){
+                elemento.innerHTML += letra;
+            }, 75 * i)
+
+            });
+            }
+            const titulo = document.querySelector('.titulo-principal');
+            typeWrite(titulo);
+        </script>
     </body>
 </html>
